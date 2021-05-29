@@ -1,0 +1,18 @@
+import turtle as t
+import random
+t.colormode(255)
+t.speed(0)
+for i in range (300) :
+    x=random.randint(-650,650)
+    y=random.randint(-350,350)
+    t.up()
+    t.goto(x,y)
+    t.down()
+    r=random.randint(5,100)
+    R=random.randint(0,255)
+    G=random.randint(0,255)
+    B=random.randint(0,255)
+    t.begin_fill()
+    t.circle(r)
+    t.fillcolor(R,G,B)
+    t.end_fill()
